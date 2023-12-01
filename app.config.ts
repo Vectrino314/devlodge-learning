@@ -2,12 +2,25 @@ export default defineAppConfig({
   ui: {
     primary: 'green',
     gray: 'slate',
+    badge: {
+      color: {
+        svelte: {
+          solid: 'bg-[ff3e00] text-white',
+          outline: 'bg-transparent text-[#ff3e00] border border-[#ff3e00]',
+        }
+      }
+    },
     footer: {
       bottom: {
         left: 'text-sm text-gray-500 dark:text-gray-400',
         wrapper: 'border-t border-gray-200 dark:border-gray-800'
       }
     }
+  },
+  head: {
+    link: [
+      { rel: 'stylesheet', href: "https://use.typekit.net/oep0oee.css" }
+    ]
   },
   header: {
     logo: {

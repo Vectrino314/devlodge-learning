@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-og-image'
   ],
+  css: [
+    '~/assets/css/main.css'
+  ],
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
@@ -23,9 +26,9 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/api/search.json': { prerender: true },
+    '/api/search.json': {prerender: true},
   },
   // Devtools / Typescript
-  devtools: { enabled: true },
-  typescript: { strict: false }
+  devtools: {enabled: true},
+  typescript: {strict: false}
 })
